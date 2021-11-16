@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ConstraintLayoutStyle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginEnd="@dimen/btnMarginEndRight"
+            android:text="@string/_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn4" />
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginStart="@dimen/btnMarginStart"
+            android:layout_marginTop="@dimen/btnMarginTop"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:text="@string/_1"
+            app:layout_constraintEnd_toStartOf="@+id/btn2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginTop="@dimen/btnMarginTop"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:text="@string/_3"
+            app:layout_constraintEnd_toStartOf="@+id/btn4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:text="@string/_6"
+            app:layout_constraintEnd_toStartOf="@+id/btn7"
+            app:layout_constraintTop_toBottomOf="@+id/btn2" />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginStart="@dimen/btnMarginStart"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:text="@string/_5"
+            app:layout_constraintEnd_toStartOf="@+id/btn6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn1" />
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginTop="@dimen/btnMarginTop"
+            android:layout_marginEnd="@dimen/btnMarginEndRight"
+            android:text="@string/_4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:text="@string/_7"
+            app:layout_constraintEnd_toStartOf="@+id/btn8"
+            app:layout_constraintTop_toBottomOf="@+id/btn3" />
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginStart="@dimen/btnMarginStart"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:layout_marginBottom="@dimen/btnMarginBottom"
+            android:text="@string/_9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn5" />
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/GeneralBtn"
+            android:layout_width="@dimen/btnClearWidth"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginEnd="@dimen/btnMarginEndRight"
+            android:layout_marginBottom="@dimen/btnMarginBottom"
+            android:text="@string/clear"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn8" />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:layout_marginBottom="@dimen/btnMarginBottom"
+            android:text="@string/_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnClear"
+            app:layout_constraintTop_toBottomOf="@+id/btn6"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/NumberBtnStyle"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginTop="@dimen/btnMarginTop"
+            android:layout_marginEnd="@dimen/btnMarginEndMiddle"
+            android:text="@string/_2"
+            app:layout_constraintEnd_toStartOf="@+id/btn3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        style="@style/ConstraintLayout3Style"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+        app:layout_constraintVertical_bias="0.503">
+
+        <TextView
+            style="@style/Txt10centsStyle"
+            android:id="@+id/txt10cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10cents"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toStartOf="@+id/txtAmount10cents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt25cents" />
+
+        <TextView
+            style="@style/TxtAmount25centsStyle"
+            android:id="@+id/txtAmount25cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Txt25centsStyle"
+            android:id="@+id/txt25cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_25cents"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toStartOf="@+id/txtAmount25cents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/TxtAmount5centsStyle"
+            android:id="@+id/txtAmount5cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAmount10cents" />
+
+        <TextView
+            android:id="@+id/txt5cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Txt5centsStyle"
+            android:text="@string/_5cents"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toStartOf="@+id/txtAmount5cents"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt10cents" />
+
+        <TextView
+            style="@style/TxtAmount1centStyle"
+            android:id="@+id/txtAmount1cent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAmount5cents" />
+
+        <TextView
+            style="@style/TxtAmount10centsStyle"
+            android:id="@+id/txtAmount10cents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAmount25cents" />
+
+        <TextView
+            style="@style/Txt1centStyle"
+            android:id="@+id/txt1cent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1cent"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/txtAmount1cent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt5cents" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        style="@style/TxtPriceStyle"
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ConstraintLayout4Style"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/constraintLayout3"
+        app:layout_constraintHorizontal_bias="0.802"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546">
+
+        <TextView
+            style="@style/Txt20dollarsStyle"
+            android:id="@+id/txt20dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_20dollars"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/Txt10dollarsStyle"
+            android:id="@+id/txt10dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_10dollars"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt20dollars" />
+
+        <TextView
+            style="@style/TxtAmount10dollarsStyle"
+            android:id="@+id/txtAmount10dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt10dollars"
+            app:layout_constraintTop_toBottomOf="@+id/txtAmount20dollars" />
+
+        <TextView
+            style="@style/TxtAmount20dollarsStyle"
+            android:id="@+id/txtAmount20dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt20dollars"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            style="@style/TxtAmount1dollarStyle"
+            android:id="@+id/txtAmount1dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt1dollar"
+            app:layout_constraintTop_toBottomOf="@+id/txtAmount5dollars"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            style="@style/TxtAmount5dollarsStyle"
+            android:id="@+id/txtAmount5dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/zeroLabelMarginEnd"
+            android:text="@string/label_0"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/txt5dollars"
+            app:layout_constraintTop_toBottomOf="@+id/txtAmount10dollars" />
+
+        <TextView
+            style="@style/Txt5dollarsStyle"
+            android:id="@+id/txt5dollars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_5dollars"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt10dollars" />
+
+        <TextView
+            style="@style/Txt1dollarStyle"
+            android:id="@+id/txt1dollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_1dollar"
+            android:textSize="@dimen/txtPriceHeight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt5dollars"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/ConstraintLayout2Style"
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151">
+
+        <TextView
+            style="@style/TxtInputStyle"
+            android:id="@+id/txtInput"
+            android:layout_width="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:text="0.00" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
